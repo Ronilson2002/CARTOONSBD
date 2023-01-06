@@ -1,0 +1,92 @@
+/* Meu código */
+body{
+    /* filter: blur(1px); */
+    background-color: #F2F2FE;
+}
+#inicio{
+    background: url("../img/Texturas2x.png") center bottom repeat-x;
+    padding-bottom: 15%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.grupo-buscar{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#buscar-texto{
+    width: 50%;
+    border-radius: 0%;
+    border: none;
+}
+
+.buscar{
+    border-radius: 0%;
+}
+
+.b-example-divider{
+    height: 2rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.fadding{
+    position: relative;
+}
+
+.fadding :hover .fadding-img{
+    opacity: 0.3;
+}
+
+.fadding:hover .middle{
+    bottom: 0;
+    height: 100%;
+}
+.fadding-img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.middle{
+    opacity: 0.9;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.texto{
+    white-space: nowrap; 
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.texto button{
+    font-weight: bold;
+}
+#cartoons{
+    border-bottom: 3px solid #008CBA;
+}
+.prop{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.descricao{
+    font-weight: bold;
+}
