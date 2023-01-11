@@ -108,7 +108,7 @@ request.onload = function() {
         document.getElementById("dataPub").innerHTML = myObj.cartoons[ind].dataPub        
         document.getElementById("sinopse").innerHTML = myObj.cartoons[ind].sinopse   
     } else {
-        console.log('Network request for dados.json failed with response' + request.status + ':' + request.statusText);
+        console.log('Network request for dados.json failed with resposta' + request.status + ':' + request.statusText);
     }
 }
 
