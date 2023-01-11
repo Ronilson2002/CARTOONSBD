@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilo.css">
-    <title>Cartoons</title>
+    <title>CartoonsBD</title>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol id="bootstrap" viewBox="0 0 118 94">
-          <title>Bootstrap</title>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
-        </symbol>
         <symbol id="facebook" viewBox="0 0 16 16">
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
         </symbol>
@@ -26,9 +22,18 @@
     </svg>
     <header>
         <!-- <img id="especial" src="../img/Texturas2x.png" alt="imagem"> -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-danger bg-light">
+        <!-- fixed-top -->
+        <nav class="navbar navbar-expand-lg navbar-danger bg-light">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand">Cartoons</a>
+                <a href="#" class="navbar-brand">
+                    <img class="logo" src="./img/logo@2px.png" alt="Logotipo">
+                <!-- <div class="logo_copiar">
+                    <div class="rect">
+                        <p class="logoTexto">Cartoons</p>
+                    </div>
+                    <img class="logo" src="../img/Camada2.png" alt="">
+                </div> -->
+                </a>
                 <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
@@ -39,173 +44,409 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="#" class="nav-link active">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="#cartoons" class="nav-link">Cartoons</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Categoria
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Aventura</a></li>
+                              <li><a class="dropdown-item" href="#">Gratuitos</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Ação</a></li>
+                              <li><a class="dropdown-item" href="#">Pagos</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Ficção Adolescente</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Mais...</a></li>
+                              <li><a class="dropdown-item" href="#">Séries</a></li>
 
                             </ul>
                           </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contactos</a></li>
+                        <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="#contactos" class="nav-link">Contactos</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="inicio">
+    <section id="inicio" class="fadd">
         <div>
-            <h1 class="display-4 text-center text-light">A Tua História Ganha Vidas</h1>
+            <h1 id="headerprincipal" class="display-4 text-center text-light">A Tua Imaginação Ganha Vidas</h1>
             <p class=" text-center text-light">Fácil e rápido em seu telemovel ou outro dispositivo electrônico</p>
-            <div class="grupo-buscar container ">
-                    <input type="text" name="" id="buscar-texto" placeholder="Pesquisar">
-                    <a href="#" class="buscar btn btn-primary" onclick="plusSlides()">SIM</a>
-        
+            <div class="container">
+              <form autocomplete="off" action="">
+                <div  class="grupo-buscar autocomplete">
+                  <input type="text" name="mybooks" id="buscar-texto" placeholder="Pesquisar Mangás">
+                  <a type="button" class="buscar btn btn-primary"></a>
+                </div>
+
+              </form>
             </div>
         </div>
     </section>
-
+    
     <section>
         <div class="container mt-3">
             <h1 id="cartoons" class="text-center">Cartoons</h1>
-            <div class="row justify-content-sm-center">
-            <!-- <div class="row justify-content-sm-center"> -->
-
-                <div class="coluna col-sm-5 col-md-4">
-                    <div class="prop card mb-5">
-                        <div class="fadding ">
-                            <img src="img/Image@2x.png" alt="imagem" class="fading-img card-img-top">
-                            <div class="middle"><div class="texto"><button class="btn btn-light" href="#" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Realidade Reversa</h4>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Descrição: Este é um Mangá para descontração e outros detalhes
-                            <a href="productos.html" class="card-link mb-2">Mais...</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coluna col-sm-5 col-md-4">
-                    <div class="prop card mb-5">
-                        <div class="fadding ">
-                            <img src="img/Image@2x.png" alt="imagem" class="fading-img card-img-top">
-                            <div class="middle"><div class="texto"><button class="btn btn-light" href="#" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Realidade Reversa</h4>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Descrição: Este é um Mangá para descontração e outros detalhes
-                            <a href="productos.html" class="card-link mb-2">Mais...</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coluna col-sm-5 col-md-4">
-                    <div class="prop card mb-5">
-                        <div class="fadding ">
-                            <img src="img/Image@2x.png" alt="imagem" class="fading-img card-img-top">
-                            <div class="middle"><div class="texto"><button class="btn btn-light" href="#" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Realidade Reversa</h4>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Descrição: Este é um Mangá para descontração e outros detalhes
-                            <a href="productos.html" class="card-link mb-2">Mais...</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coluna col-sm-5 col-md-4">
-                    <div class="prop card mb-5">
-                        <div class="fadding ">
-                            <img src="img/Image@2x.png" alt="imagem" class="fading-img card-img-top">
-                            <div class="middle"><div class="texto"><button class="btn btn-light" href="#" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Realidade Reversa</h4>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Descrição: Este é um Mangá para descontração e outros detalhes
-                            <a href="productos.html" class="card-link mb-2">Mais...</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coluna col-sm-5 col-md-4">
-                    <div class="prop card mb-5">
-                        <div class="fadding ">
-                            <img src="img/Image@2x.png" alt="imagem" class="fading-img card-img-top">
-                            <div class="middle"><div class="texto"><button class="btn btn-light" href="#" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Realidade Reversa</h4>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Descrição: Este é um Mangá para descontração e outros detalhes
-                            <a href="productos.html" class="card-link mb-2">Mais...</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coluna col-sm-5 col-md-4">
-                    <div class="prop card mb-5">
-                        <div class="fadding ">
-                            <img src="img/Image@2x.png" alt="imagem" class="fading-img card-img-top">
-                            <div class="middle"><div class="texto"><button class="btn btn-light" href="#" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Realidade Reversa</h4>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Descrição: Este é um Mangá para descontração e outros detalhes
-                            <a href="productos.html" class="card-link mb-2">Mais...</a>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="container" id="myBtnContainer">
+              <a href="#cartoons" class="btnclicke ativo"> Todos</a>
+              <a href="#gratuito" class="btnclicke"> Gratuitos</a>
+              <a href="#serie" class="btnclicke">Séries</a>
             </div>
+            
+            <!-- Gratuitos -->
+            <h1 id="gratuito" class="display-5 text-center">Gratuitos</h1>
+            <div class="row justify-content-sm-center">
+              <!-- Blackson -->
+              <div class="col-sm-5 col-md-4">
+                  <div class="prop card mb-5">
+                      <div class="fadding ">
+                          <img src="img/covers/blackson@2x.png" alt="Kymiona" class="fadding-img card-img-top">
+                          <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                      </div>
+                      <div class="card-body">
+                          <h4 class="card-title text-center">BlackSon</h4>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <span class="descricao">Descrição: </span> O meu mundo é um mundo normal tal como todos...
+                        <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                          <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#screenModal">Ler</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                              </div>
+                              <small class="text-muted">27 pág.</small>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Kimyona -->
+              <div class="col-sm-5 col-md-4">
+                <div class="prop card mb-5">
+                    <div class="fadding ">
+                        <img src="img/covers/kimyona@2x.png" alt="Kymiona" class="fadding-img card-img-top">
+                        <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Kymiona Sekai</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <span class="descricao">Descrição: </span> Em um mundo onde os humanos estão na base da cadeia...
+                      <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                            </div>
+                            <small class="text-muted">20 pág.</small>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Pernalta -->
+              <div class="col-sm-5 col-md-4">
+                <div class="prop card mb-5">
+                    <div class="fadding ">
+                        <img src="img/covers/pernalta@2x.png" alt="Pernalta" class="fadding-img card-img-top">
+                        <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Pernalta</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <span class="descricao">Descrição: </span> Pernalta conta a história de Rosa de Lurdes, uma jovem...
+                      <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                            </div>
+                            <small class="text-muted">36 pág.</small>
+                          </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Nervous -->
+              <div class="col-sm-5 col-md-4">
+                <div class="prop card mb-5">
+                    <div class="fadding ">
+                        <img src="img/covers/nervous@2x.png" alt="Nervous" class="fadding-img card-img-top">
+                        <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Nervous</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <span class="descricao">Descrição: </span> "Após sua cidade ser destruida de forma misteriosa, abalado...
+                      <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                            </div>
+                            <small class="text-muted">25 pág.</small>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Cluedo -->
+              <div class="col-sm-5 col-md-4">
+                <div class="prop card mb-5">
+                    <div class="fadding ">
+                        <img src="img/covers/cluedo@2x.png" alt="Cluedo" class="fadding-img card-img-top">
+                        <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Cluedo</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <span class="descricao">Descrição: </span> No Description
+                      <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                            </div>
+                            <small class="text-muted">25 pág.</small>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- Pagos -->
+
+            <!-- Séries -->
+            <h1 id="serie" class="display-5 text-center">Séries</h1>
+            <div class="row justify-content-sm-center">
+              <!-- Reverse Reality-->
+              <div class="col-sm-5 col-md-4">
+                  <div class="prop card mb-5">
+                      <div class="fadding ">
+                          <img src="img/covers/reverse@2x.png" alt="Reverse Reality" class="fadding-img card-img-top">
+                          <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                      </div>
+                      <div class="card-body">
+                          <h4 class="card-title text-center">Reverse Reality</h4>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <span class="descricao">Descrição: </span>E se o teu desejo de viver fantásticas e assombrosas...
+                        <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                          <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                              </div>
+                              <small class="text-muted">36 pág.</small>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Reverse Reality -->
+              <div class="col-sm-5 col-md-4">
+                <div class="prop card mb-5">
+                    <div class="fadding ">
+                        <img src="img/covers/reverse2@2x.png" alt="Reverse Reality" class="fadding-img card-img-top">
+                        <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Reverse Reality2</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <span class="descricao">Descrição: </span>E se o teu desejo de viver fantásticas e assombrosas...
+                      <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                            </div>
+                            <small class="text-muted">17 pág.</small>
+                          </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Nani Osaka -->
+              <div class="col-sm-5 col-md-4">
+                <div class="prop card mb-5">
+                    <div class="fadding ">
+                        <img src="img/covers/nani@2x.png" alt="Nani Osaka" class="fadding-img card-img-top">
+                        <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Nani Osaka</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <span class="descricao">Descrição: </span>Um objecto planetário que em cada cem mil anos faz uma tragetória...
+                      <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                            </div>
+                            <small class="text-muted">22 pág.</small>
+                          </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Nani Osaka2 -->
+              <div class="col-sm-5 col-md-4">
+                <div class="prop card mb-5">
+                    <div class="fadding ">
+                        <img src="img/covers/nani2@2x.png" alt="Nani Osaka2" class="fadding-img card-img-top">
+                        <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Nani Osaka2</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <span class="descricao">Descrição: </span>Mateus Ndombo meu avó, ele era o cientista mais conhecido de Angola e...
+                      <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                            </div>
+                            <small class="text-muted">21 pág.</small>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Watashi No Kagaku -->
+              <div class="col-sm-5 col-md-4">
+                <div class="prop card mb-5">
+                    <div class="fadding ">
+                        <img src="img/covers/watashi@2x.png" alt="Watashi No Kagaku" class="fadding-img card-img-top">
+                        <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Watashi No Kagaku</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <span class="descricao">Descrição: </span>A possibilidade de dominar os elementos da natureza mudou...
+                      <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                            </div>
+                            <small class="text-muted">25 pág.</small>
+                          </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Watashi No Kagaku2-->
+              <div class="col-sm-5 col-md-4">
+                <div class="prop card mb-5">
+                    <div class="fadding ">
+                        <img src="img/covers/watashi2@2x.png" alt="Watashi No Kagaku2" class="fadding-img card-img-top">
+                        <div class="middle"><div class="texto"><button class="btn btn-light btnModal" data-bs-toggle="modal" data-bs-target="#divmodal">Ver Detalhes</button></div></div>    
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Watashi No Kagaku2</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <span class="descricao">Descrição: </span>A possibilidade de dominar os elementos da natureza mudou...
+                      <a href="#divmodal" data-bs-toggle="modal" class="card-link mb-2 linkModal">Mais...</a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Ler</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                            </div>
+                            <small class="text-muted">45 pág.</small>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              
+              
+              
+            </div>
+
         </div>
     </section>
 
     <div class="b-example-divider"></div>
-    <div class="modal fade" id="divmodal" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+
+    <section>
+      <div class="container mt-5">
+        <h1 id="sobre" class="text-center">Sobre</h1>
+        <hr>
+        <div class="row justify-content-sm-center">
+          <div class="col">
+            <h4 class="text-center">Sobre o Site</h4>
+            <p>Este site foi criado na perspectiva de dar esperança aos artistas angolanos. 
+              uma oportunidade de partilhar as suas obras com o público angolano e fora... De oferecer a melhor experiência aos leitores de mangá</p>
+          </div>
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="col">
+            <img src="./img/rony.jpg" height="200px" width="250px" alt="Imagem">
+          </div>
+          <div class="col">
+            <h4 class="text-center">Sobre Rosário Domingos</h4>
+            <p>Rosário Domingos, estudante de Energias Renováveis e criador de Site</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+  
+    <section>
+      <div class="container mt-5">
+        <h2 class="text-center">Contactos</h2>
+        <p class="text-center">Alguma Sugestão para melhorar o Site? Write</p>
+        <div class="row">
+          <div class="col">
+            <p>End.: Samba-Luanda, Ang</p>
+            <p>Telefone: +244927171186</p>
+            <p>Email: ronyronilson2002@gmail.com</p>
+          </div>
+          <div class="col">
+            <form action="" class="row">
+              <input type="text" placeholder="Nome" class="col frm-texto mg1">
+              <input type="text" placeholder="email" class="col frm-texto mg2">
+              <input type="text" placeholder="Mensagem" class="frm-texto">
+              <button id="rony" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="alerta sucesso">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          Mensagem enviada com sucesso!
+        </div>
+      </div>
+    </section>
+
+    <div class="b-example-divider mt-5"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="divmodal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalCenteredScrollableTitle">Reverse</h1>
+        <h1 class="modal-title fs-5" id="modalTitle"></h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
 
-        <p><span class="descricao">Tamanho do arquivo: </span></p>
-        <p><span class="descricao">Roteirista: </span></p>
-        <p><span class="descricao">Gênero: </span></p>
-        <p><span class="descricao">Páginas: </span></p>
-        <p><span class="descricao">Desenhista: </span></p>
-        <p><span class="descricao">Capítulos: </span></p>
-        <p><span class="descricao">Editora: </span></p>
-        <p><span class="descricao">Colorista: </span></p>
-        <p><span class="descricao">Recomendação: </span></p>
-        <p><span class="descricao">Avaliação: </span></p>
-        <p><span class="descricao">Idade: </span></p>
-        <p><span class="descricao">Data de publicação: </span></p>
+        <p><span class="descricao">Tamanho do arquivo: </span><span id="tamanhoArquivo"></span></p>
+        <p><span class="descricao">Roteirista: </span><span id="roteirista"></span></p>
+        <p><span class="descricao">Gênero: </span><span id="genero" ></span></p>
+        <p><span class="descricao">Páginas: </span><span id="paginas" ></span></p>
+        <p><span class="descricao">Desenhista: </span><span id="desenhista" ></span></p>
+        <p><span class="descricao">Editora: </span><span id="editora"></span></p>
+        <p><span class="descricao">Colorista: </span><span id="colorista"></span></p>
+        <p><span class="descricao">Recomendação: </span><span id="recomendacao"></span></p>
+        <p><span class="descricao">Avaliação: </span><span id="avaliacao"></span></p>
+        <p><span class="descricao">Data de publicação: </span><span id="dataPub"></span></p>
         <div>
             <p><b>Sinopse: </b></p>
-            <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque doloribus veritatis officiis dolores nihil laudantium. Blanditiis repellat optio harum eveniet odio deserunt fugiat, reiciendis dicta eligendi fugit tempora doloremque.</i></p>
+            <p ><i id="sinopse"></i></p>
         </div>
     </div>
       <div class="modal-footer">
@@ -214,25 +455,110 @@
       </div>
     </div>
   </div>
-</div>
+    </div>
+
+    <!-- ModalFullScreen -->
+    <div class="modal fade" id="screenModal" tabindex="-1" aria-labelledby="screenModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-4" id="screenModalLabel">BlackSon</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+            <!-- Container for the image gallery -->
+            <div class="contentor">
+
+              <!-- Full-width images with number text -->
+              <div class="meuSlides">
+                <div class="numbertext">1 / 6</div>
+                  <img src="./img/covers/blackson/0.png" style="width:100%">
+              </div>
+            
+              <div class="meuSlides">
+                <div class="numbertext">2 / 6</div>
+                  <img src="./img/covers/blackson/1.png" style="width:100%">
+              </div>
+            
+              <div class="meuSlides">
+                <div class="numbertext">3 / 6</div>
+                  <img src="./img/covers/blackson/2.png" style="width:100%">
+              </div>
+            
+              <div class="meuSlides">
+                <div class="numbertext">4 / 6</div>
+                  <img src="./img/covers/blackson/3.png" style="width:100%">
+              </div>
+            
+              <div class="meuSlides">
+                <div class="numbertext">5 / 6</div>
+                  <img src="./img/covers/blackson/4.png" style="width:100%">
+              </div>
+            
+              <div class="meuSlides">
+                <div class="numbertext">6 / 6</div>
+                  <img src="./img/covers/blackson/5.png" style="width:100%">
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+              <!-- Image text -->
+              <div class="caption-contentor">
+                <p id="caption"></p>
+              </div>
+            
+              <!-- Thumbnail images -->
+              <div class="linha">
+                <div class="coluna">
+                  <img class="demo cursor" src="./img/covers/blackson/0.png" style="width:100%" onclick="currentSlide(1)" alt="Blackson" >
+                </div>
+                <div class="coluna">
+                  <img class="demo cursor" src="./img/covers/blackson/1.png" style="width:100%" onclick="currentSlide(2)" alt="Blackson 1">
+                </div>
+                <div class="coluna">
+                  <img class="demo cursor" src="./img/covers/blackson/2.png" style="width:100%" onclick="currentSlide(3)" alt="Blackson 2">
+                </div>
+                <div class="coluna">
+                  <img class="demo cursor" src="./img/covers/blackson/3.png" style="width:100%" onclick="currentSlide(4)" alt="Blackson 3">
+                </div>
+                <div class="coluna">
+                  <img class="demo cursor" src="./img/covers/blackson/4.png" style="width:100%" onclick="currentSlide(5)" alt="Blackson 4">
+                </div>
+                <div class="coluna">
+                  <img class="demo cursor" src="./img/covers/blackson/5.png" style="width:100%" onclick="currentSlide(6)" alt="Blackson 5">
+                </div>
+              </div>
+            </div>
+
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- Rodapé -->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="container">
                 <ul class="nav justify-content-center pb-3 mb-4">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contactos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Preços</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
+                  <li class="nav-item"><a href="#inicio" class="nav-link px-2 text-muted">Home</a></li>
+                  <li class="nav-item"><a href="#cartoons" class="nav-link px-2 text-muted">Cartoons</a></li>
+                  <li class="nav-item"><a href="#contactos" class="nav-link px-2 text-muted">Contactos</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link px-2 text-muted">Sobre</a></li>
                   </ul>
             </div>
             <div class="col-md-4 d-flex align-items-center">
 
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img src="./img/ico.png" alt="">
             </a>
-            <span class="mb-3 mb-md-0 text-muted">&realine; 2023 RonySoft</span>
+            <span class="mb-3 mb-md-0 text-muted"> 2023 RonySoft</span>
           </div>
       
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -242,11 +568,9 @@
           </ul>
         </footer>
     </div>
-
     
     <script src="css/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="./js/index.js"></script>
     <script src="./js/carrousel.js"></script>
-    <!-- <script src="css/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="./js/consum.js"></script>
 </body>
 </html>

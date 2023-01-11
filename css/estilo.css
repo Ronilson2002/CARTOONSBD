@@ -1,31 +1,23 @@
 /* Meu código */
 body{
     /* filter: blur(1px); */
-    background-color: #F2F2FE;
+    /* background-color: #e0e0e0; */
 }
 #inicio{
-    background: url("../img/Texturas2x.png") center bottom repeat-x;
+    /* background: url("../img/Texturas2x.png") center bottom repeat-x; */
+    background: url("../img/covers/screen.png")  center no-repeat;
+    background-size: 100% 100%;
+    padding-top: 10%;
     padding-bottom: 15%;
-    padding-top: 15%;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
 }
 
-.grupo-buscar{
-    display: flex;
-    justify-content: center;
-    
-}
-
-#buscar-texto{
-    width: 50%;
-    border-radius: 0%;
-    border: none;
-}
-
-.buscar{
-    border-radius: 0%;
+.logo{
+    /* width: 8rem;
+    height: auto; */
+    background-image: url("../img/Especial/");
 }
 
 .b-example-divider{
@@ -40,28 +32,25 @@ body{
     position: relative;
 }
 
-.fadding :hover .fadding-img{
-    opacity: 0.3;
+.fadding:hover .fadding-img{
+    filter: blur(1px);
 }
-
+.fadding-img{
+    border-radius: 0%;
+}
 .fadding:hover .middle{
     bottom: 0;
     height: 100%;
 }
-.fadding-img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 .middle{
     opacity: 0.9;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     position: absolute;
     bottom: 50%;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #071744;
     overflow: hidden;
     width: 100%;
     height:0;
@@ -81,12 +70,275 @@ body{
 .texto button{
     font-weight: bold;
 }
-#cartoons{
-    border-bottom: 3px solid #008CBA;
-}
 .prop{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+    border-radius: 0%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
 
 .descricao{
     font-weight: bold;
+}
+
+.logo{
+    height: 1.5rem;
+    /* height: 1.45rem; */
+}
+
+#myBtnContainer{
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 12px 0;
+}
+.btnclicke{
+  text-decoration: none;
+  color: black;
+  padding: 20px 30px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btnclicke:hover{
+    background-color: #ddd;
+}
+.btnclicke.ativo {
+    background-color: #666;
+     color: white;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+/* Não tocar no código!!! */
+/* .logo_copiar{
+    display: flex;
+    flex-wrap: nowrap;
+} */
+
+/* .rect{
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    height: 2rem;
+  }
+  .logoTexto{
+    font-size: 1.34rem;
+    font-family: "Berlin Sans FB";
+    font-weight: bold;
+    text-align: center;
+} */
+
+/* Fading animation */
+.fadd {
+    -webkit-animation-name: fadd;
+    -webkit-animation-duration: 5s;
+    animation-name: fadd;
+    animation-duration: 5s;
+  }
+  
+  @-webkit-keyframes fadd {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadd {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* SOBRE */
+
+#rony{
+    background-color: #071744;
+    color: white;
+    margin-top: 5px;
+    border: none;
+    padding: 10px 0;
+    width: 100px;
+}
+
+.frm-texto{
+    margin-bottom: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid rgb(150, 150, 150);
+    border-width: 1px;
+}
+
+.mg1{
+    margin-right: 4px;
+}
+
+.mg2{
+    margin-left: 4px;
+}
+
+/* Não tocar */
+/* Position the image container (needed to position the left and right arrows) */
+.contentor {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .meuSlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-contentor {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .linha:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .coluna {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+.ativo,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+  }
+
+  .grupo-buscar{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#buscar-texto{
+    width: 50%;
+    border-radius: 0%;
+    border: none;
+}
+
+.buscar{
+    border-radius: 0%;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+
+  .alerta {
+    margin-top: 10px;
+    display: none;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.alerta.sucesso {background-color: #4CAF50;}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+#headerprincipal{
+  font-weight: 400;
 }
