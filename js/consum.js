@@ -49,7 +49,17 @@ function Abrir() {
     document.getElementsByClassName("alerta")[0].style.display = "block";
     
 }
-function Carregar(ind) {
+
+/*function Carregar(ind) {
+
+    // var requestURL = https://github.com/Ronilson2002/CARTOONSBD/blob/main/dados.json
+    // var request = new XMLHttpRequest();
+    // request.open('GET', requestURL);
+    // request.responseType = 'json';
+    // request.send();
+    // request.onload = function() {
+    //     var myObj = request.response;
+    // }
 
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -75,6 +85,32 @@ function Carregar(ind) {
         };
     xmlhttp.open("GET", "../dados.json", true);
     xmlhttp.send();
+}*/
+
+function Carregar(ind){
+    var request = new XMLHttpRequest();
+request.open('GET', './dados.json');
+request.responseType = 'json';
+
+request.onload = function() {
+    if (request.status === 200) {
+        var myObj = request.response;
+        document.getElementById("modalTitle").innerHTML = myObj.cartoons[ind].modalTitle        
+        document.getElementById("tamanhoArquivo").innerHTML = myObj.cartoons[ind].tamanhoArquivo        
+        document.getElementById("roteirista").innerHTML = myObj.cartoons[ind].roteirista        
+        document.getElementById("genero").innerHTML = myObj.cartoons[ind].genero        
+        document.getElementById("paginas").innerHTML = myObj.cartoons[ind].paginas        
+        document.getElementById("paginas").innerHTML = myObj.cartoons[ind].desenhista        
+        document.getElementById("editora").innerHTML = myObj.cartoons[ind].editora        
+        document.getElementById("recomendacao").innerHTML = myObj.cartoons[ind].recomendacao        
+        document.getElementById("colorista").innerHTML = myObj.cartoons[ind].colorista        
+        document.getElementById("avaliacao").innerHTML = myObj.cartoons[ind].avaliacao        
+        document.getElementById("dataPub").innerHTML = myObj.cartoons[ind].dataPub        
+        document.getElementById("sinopse").innerHTML = myObj.cartoons[ind].sinopse   
+    } else {
+        console.log('Network request for dados.json failed with response' + request.status + ':' + request.statusText);
+    }
 }
 
-
+request.send();
+}

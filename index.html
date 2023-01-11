@@ -55,7 +55,7 @@
                               <li><hr class="dropdown-divider"></li>
                               <li><a class="dropdown-item" href="#">Pagos</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Séries</a></li>
+                              <li><a class="dropdown-item" href="#serie">Séries</a></li>
 
                             </ul>
                           </li>
@@ -110,7 +110,7 @@
                           <div class="d-flex justify-content-between align-items-center">
                               <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#screenModal">Ler</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda">Baixar</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Função Não disponivel Ainda" onclick="opened()">Baixar</button>
                               </div>
                               <small class="text-muted">27 pág.</small>
                             </div>
@@ -568,6 +568,21 @@
           </ul>
         </footer>
     </div>
+
+    <!-- Trigger/Open The Modal -->
+<button id="btnmodal">Open Modal</button>
+
+<!-- The Modal -->
+<div id="meuModal" class="modulo">
+
+  <!-- Modal content -->
+  <div class="modulo-content">
+    <span class="fech">&times;</span>
+    <h1>Função ainda não disponivel</h1>
+  </div>
+
+</div>
+    
     
     <script src="css/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./js/carrousel.js"></script>
